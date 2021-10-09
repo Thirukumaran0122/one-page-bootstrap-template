@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .navbar{
@@ -43,6 +44,16 @@
 .navlist:hover::after{
   width: 80%;
   color: #106eea;
+}
+
+.team-bg{
+  width: 13rem;
+  height: 13rem;
+  border-radius: 60%;
+  border: 5px solid #fff;
+  position: relative;
+  left: 45rem;
+  bottom: 30px;
 }
 
 .hero {
@@ -140,4 +151,16 @@
 }
 .hero-container .icon-box:hover .icon i {
   color: #fff;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
